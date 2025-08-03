@@ -39,9 +39,9 @@ div {
 }
 
 button {
-    height: 100px;
-    width: 100px;
-    border-radius: 20px;
+    height: 250px;
+    width: 250px;
+    border-radius: 60px;
 }
 
 #welcome {
@@ -65,6 +65,13 @@ header {
     display: flex;
     gap: 20px;
     justify-content: center;
+    border: none;
+}
+
+.btn {
+    font-size: 125px;
+    border: none;
+    background-color: whitesmoke;
 }
 
 #two {
