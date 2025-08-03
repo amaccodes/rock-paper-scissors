@@ -2,6 +2,17 @@ div {
     display: flex;
 }
 
+/* Make the video cover the whole body */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* ensures the video fills the screen without stretching */
+  z-index: -1;       /* pushes the video behind all content */
+}
+
 #tracking {
     display: flex;
     align-items: center;
@@ -20,12 +31,15 @@ div {
     height: 100px;
     gap: 12px;
     position: relative;
+    color: whitesmoke;
+    font-weight: 700;
 }
 
 #one {
     display: flex;
     flex-direction: column;
     padding-left: 50px;
+    color: whitesmoke;
 }
 
 .main {
@@ -45,7 +59,7 @@ button {
 }
 
 #welcome {
-    color: rgb(138, 20, 20);
+    color: rgb(240, 82, 82);
     
 }
 
@@ -54,8 +68,8 @@ header {
     flex-direction: row;
     background-color: goldenrod;
     padding: 24px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px;
+    margin: 24px;
     color: whitesmoke;
     box-sizing: border-box;
     justify-content: space-between;
@@ -72,6 +86,7 @@ header {
     font-size: 125px;
     border: none;
     background-color: whitesmoke;
+    opacity: 0.95;
 }
 
 #two {
@@ -110,6 +125,7 @@ a {
     padding: 12px;
     gap: 5px;
     flex-direction: column;
+    color: whitesmoke;
 }
 
 .nav {
